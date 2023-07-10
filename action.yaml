@@ -17,7 +17,7 @@ runs:
     - ${{ inputs.primsa_access_key_id }}
     - ${{ inputs.primsa_access_key_secret}}
   env:
-    TWISTLOCK_USER="${{ inputs.primsa_access_key_id }}"
-    TWISTLOCK_PASSWORD="${{ inputs.primsa_access_key_id }}"
+    TWISTLOCK_USER: ${{ inputs.primsa_access_key_id }}
+    TWISTLOCK_PASSWORD: ${{ inputs.primsa_access_key_id }}
 
   
