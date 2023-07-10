@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Run Job
       uses: ./ 
-      id: Prisma Image Review
+      id: prisma
       with:
         primsa_access_key_id: 'Fake ID'
         primsa_access_key_secret: 'Fake Secret'
