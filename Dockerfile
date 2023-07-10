@@ -1,6 +1,6 @@
 FROM python:alpine3.18
 
-COPY entrypoint.sh /entrypoint.sh
+COPY script.py /script.py
 
 CMD [ "python script.py" ]
 
