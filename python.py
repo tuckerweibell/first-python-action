@@ -1,5 +1,3 @@
 
 import sys
-
-
-print(sys.argv)
+print(f"Your name is {sys.argv[1]} {sys.argv[2]}")

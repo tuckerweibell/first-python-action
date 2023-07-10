@@ -1,17 +1,22 @@
-name: Your Mom
+name: Name Printer
 
-description: Your mom sucks at life and you do too.
+description: Name Printer
 
 inputs:
-  yourmom:
-    description: Name of your mom
+  firstname:
+    description: First
     required: true
     default: 'denice'
+  lastname:
+    description: Last
+    required: true
+    default: 'dopes'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.yourmom }}
+    - ${{ inputs.firstname }}
+    - ${{ inputs.lastname}}
 
   
