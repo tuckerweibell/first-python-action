@@ -3,14 +3,14 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: my test job
+    name: Prisma Image Review
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Hello world action step
-      uses: ./ # Uses an action in the root directory
-      id: hello
+    - name: Run Job
+      uses: ./ 
+      id: Prisma Image Review
       with:
-        lastname: 'Weibell'
-        firstname: 'Tucker'
+        primsa_access_key_id: 'Fake ID'
+        primsa_access_key_secret: 'Fake Secret'
 

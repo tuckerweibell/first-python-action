@@ -1,22 +1,23 @@
-name: Name Printer
+name: Prisma Image Review
 
-description: Name Printer
+description: Builds and scans docker images from main branch and PR branch to look for diff.
 
 inputs:
-  firstname:
-    description: First
+  primsa_access_key_id:
+    description: Prisma Cloud Access Key ID
     required: true
-    default: 'denice'
-  lastname:
-    description: Last
+  primsa_access_key_secret:
+    description: Prisma Cloud Access Key Secret
     required: true
-    default: 'dopes'
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.firstname }}
-    - ${{ inputs.lastname}}
+    - ${{ inputs.primsa_access_key_id }}
+    - ${{ inputs.primsa_access_key_secret}}
+  env:
+    TWISTLOCK_USER="${{ inputs.primsa_access_key_id }}"
+    TWISTLOCK_PASSWORD="${{ inputs.primsa_access_key_id }}"
 
   
