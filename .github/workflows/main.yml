@@ -11,6 +11,6 @@ jobs:
       uses: ./ 
       id: prisma
       with:
-        primsa_access_key_id: 'Fake ID'
-        primsa_access_key_secret: 'Fake Secret'
+        primsa_access_key_id: ${{ secrets.primsa_access_key_id }}
+        primsa_access_key_secret: ${{ secrets.primsa_access_key_secret }}
 
