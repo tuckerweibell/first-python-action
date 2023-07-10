@@ -1,6 +1,7 @@
-FROM python:alpine3.18
+FROM python:latest
 
-COPY script.py /script.py
+ADD script.py /script.py
 
-CMD [ "python script.py" ]
+RUN chmod +x script.py
 
+CMD python script.py

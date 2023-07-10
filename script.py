@@ -1,5 +1,3 @@
-#!/bin/python
-
 import os
 
 mom = os.getenv('INPUT_YOURMOM')
