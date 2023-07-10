@@ -1,0 +1,17 @@
+name: Your Mom
+
+description: Your mom sucks at life and you do too.
+
+inputs:
+  yourmom:
+    description: Name of your mom
+    required: true
+    default: 'denice'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.yourmom }}
+
+  
