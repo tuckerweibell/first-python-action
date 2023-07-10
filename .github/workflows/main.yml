@@ -11,6 +11,6 @@ jobs:
       uses: ./ 
       id: prisma
       with:
-        primsa_access_key_id: ${{ secrets.primsa_access_key_id }}
-        primsa_access_key_secret: ${{ secrets.primsa_access_key_secret }}
+        primsa_access_key_id: ${{ secrets.TWISTLOCK_USER }}
+        primsa_access_key_secret: ${{ secrets.TWISTLOCK_PASSWORD }}
 
