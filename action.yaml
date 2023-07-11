@@ -3,10 +3,10 @@ name: Prisma Image Review
 description: Builds and scans docker images from main branch and PR branch to look for diff.
 
 inputs:
-  primsa_access_key_id:
+  prisma_access_key_id:
     description: Prisma Cloud Access Key ID
     required: true
-  primsa_access_key_secret:
+  prisma_access_key_secret:
     description: Prisma Cloud Access Key Secret
     required: true
   prisma_console_url:
@@ -20,9 +20,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    TWISTLOCK_USER: ${{ inputs.primsa_access_key_id }}
-    TWISTLOCK_PASSWORD: ${{ inputs.primsa_access_key_secret }}
-    CONSOLE_URL: ${{ inputs.primsa_console_url }}
-    API_VERSION: ${{ inputs.primsa_api_version }}
+    TWISTLOCK_USER: ${{ inputs.prisma_access_key_id }}
+    TWISTLOCK_PASSWORD: ${{ inputs.prisma_access_key_secret }}
+    CONSOLE_URL: ${{ inputs.prisma_console_url }}
+    API_VERSION: ${{ inputs.prisma_api_version }}
 
   
