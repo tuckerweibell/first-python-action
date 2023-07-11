@@ -13,4 +13,6 @@ jobs:
       with:
         primsa_access_key_id: ${{ secrets.TWISTLOCK_USER }}
         primsa_access_key_secret: ${{ secrets.TWISTLOCK_PASSWORD }}
+        primsa_console_url: ${{ secrets.CONSOLE_URL }}
+        primsa_api_version: ${{ secrets.API_VERSION }}
 
