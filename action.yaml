@@ -9,6 +9,12 @@ inputs:
   primsa_access_key_secret:
     description: Prisma Cloud Access Key Secret
     required: true
+  prisma_console_url:
+    description: Prisma Cloud Console URL
+    required: true
+  prisma_api_version:
+    description: Prisma Cloud API Version
+    required: true
 
 runs:
   using: 'docker'
