@@ -1,6 +1,7 @@
 #!/bin/bash
 
-URL="$CONSOLE_URL/api/$API_VERSION/util/twistcli"
+#URL="$CONSOLE_URL/api/$API_VERSION/util/twistcli"
+URL="https://google.com"
 
 
 echo $TWISTLOCK_PASSWORD | curl -k -u $TWISTLOCK_USER -X GET -o twistcli $URL 
