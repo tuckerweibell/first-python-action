@@ -1,6 +1,6 @@
 #!/bin/bash
 
- URL = "$CONSOLE_URL/api/$API_VERSION/util/twistcli"
+URL= "$CONSOLE_URL/api/$API_VERSION/util/twistcli"
 echo $URL
 
 
