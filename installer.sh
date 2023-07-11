@@ -1,9 +1,13 @@
 #!/bin/bash
 
-#URL="$CONSOLE_URL/api/$API_VERSION/util/twistcli"
-URL="https://google.com"
 
+TWISTLOCK_USER=$1
+TWISTLOCK_PASSWORD=$2 
+CONSOLE_URL=$3
+API_VERSION=$4
 
-curl -k -u $TWISTLOCK_USER -X GET -o twistcli $URL 
+URL="$CONSOLE_URL/api/$API_VERSION/util/twistcli"
 
-if [$? == 0]; then echo "Twistcli Linux Installed Successfully"; fi
+echo $TWISTLOCK_PASSWORD | curl -k -u $TWISTLOCK_USER -X GET -o twistcli $URL 
+
+if [ $? == "0" ]; then echo "Twistcli Linux Installed Successfully"; fi
