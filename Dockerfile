@@ -7,6 +7,6 @@ COPY installer.sh installer.sh
 
 RUN chmod +x python.py installer.sh
 
-RUN ./installer.sh
+RUN /bin/bash -c 'installer.sh'
 
 ENTRYPOINT [ "python3", "python.py" ]
