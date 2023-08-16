@@ -17,6 +17,7 @@ jobs:
     - name: Checkout the code
       uses: actions/checkout@v3
     - name: Scan the repo and upload dependency results
+      run: npm install
       uses: anchore/sbom-action@bb716408e75840bbb01e839347cd213767269d4a
       with:
         artifact-name: image.spdx.json
