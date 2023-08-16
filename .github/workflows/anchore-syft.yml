@@ -21,5 +21,6 @@ jobs:
     - name: Scan the repo and upload dependency results
       uses: anchore/sbom-action@bb716408e75840bbb01e839347cd213767269d4a
       with:
+        file: .
         artifact-name: image.spdx.json
         dependency-snapshot: true
